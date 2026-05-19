@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './App.css'
 import SearchBar from './components/SearchBar';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
 
@@ -15,8 +15,8 @@ function App() {
 
   return (
 
-    <div className="container">
-      
+    <div class="font-sans">
+      <NavigationBar />
       <h1>Book Tracker</h1>
   
     <SearchBar value={search} onChange={setSearch} onSearch={handleSearch}
